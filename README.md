@@ -1,5 +1,7 @@
 ### **Customer Base - backend  (База данных покупателей)**
 
+### Customer Base - frontend https://github.com/titanmet/customerbase-frontend
+
 HTTP Method: POST 
 Request URL: http://localhost:8080/api/v1/customers
 
