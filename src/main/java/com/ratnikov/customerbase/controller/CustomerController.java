@@ -23,8 +23,12 @@ import java.util.Map;
 @RestController
 @RequestMapping("/")
 public class CustomerController {
+    private final CustomerRepository customerRepository;
+
     @Autowired
-    private CustomerRepository customerRepository;
+    public CustomerController(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
 
     @GetMapping("/customers")
     public List<CustomerBase> getAllCustomer(){
